@@ -1,0 +1,1 @@
+Due to compatibility issues the Standard Assets/Image Effects were removed. If the user wants, can adjust it to the currently used version of Unity.
