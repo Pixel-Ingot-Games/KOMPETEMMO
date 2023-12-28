@@ -1,0 +1,178 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e251860fcd970734c9f14ebd98a146c3, type: 3}
+  m_Name: GS-20231222 - 051551
+  m_EditorClassIdentifier: 
+  m_name: Session 20231222-051551
+  m_description: 'Rocking out at Creativity Central!
+
+
+    If you like Gaia please
+    consider rating it :)'
+  m_previewImage: {fileID: 0}
+  m_dateCreated: 12/22/2023 5:15:51 AM
+  m_terrainWidth: 1024
+  m_terrainDepth: 1024
+  m_terrainHeight: 1024
+  m_seaLevel: 25
+  m_spawnDensity: 0.6
+  m_isLocked: 0
+  m_previewImageBytes: 
+  m_previewImageWidth: 0
+  m_previewImageHeight: 0
+  m_operations:
+  - m_description: Clear World
+    m_operationType: 10
+    m_isActive: 1
+    m_affectedTerrainNames: []
+    m_operationDateTime: 12/22/2023 5:15:58 AM
+    scriptableObjectAssetGUID: 
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: 'Creating World: 1 x 1 tiles, tile size: 1024'
+    m_operationType: 0
+    m_isActive: 1
+    m_affectedTerrainNames: []
+    m_operationDateTime: 12/22/2023 5:15:58 AM
+    scriptableObjectAssetGUID: 20b0dfbe4e309394c9ed63b224eb116c
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Multiple Spawners (13)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20231222 - 051558
+    m_operationDateTime: 12/22/2023 5:16:10 AM
+    scriptableObjectAssetGUID: fa473e98f8472b14a955aca57b994213
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  m_terrainMinMaxCache:
+  - guid: 4f0b751b70be4264cb17417ce4a72dc0
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 83.376274
+  - guid: Worldmap
+    isWorldmap: 1
+    recalculate: 0
+    min: 0.22401837
+    max: 44.201096
+  m_bakedMaskCacheEntries:
+  - fileName: Terrain_0_0-20231222 - 051558_LayerTree_7168_1
+    assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerTree_7168_1
+    fullPath: E:/Fiverr/Kompeteverse/Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerTree_7168_1
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20231222 - 051558_LayerGameObject_7168_5
+    assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerGameObject_7168_5
+    fullPath: E:/Fiverr/Kompeteverse/Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerGameObject_7168_5
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20231222 - 051558_LayerGameObject_7168_9
+    assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerGameObject_7168_9
+    fullPath: E:/Fiverr/Kompeteverse/Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerGameObject_7168_9
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20231222 - 051558_RadiusTag_PW - Prop_3
+    assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_RadiusTag_PW - Prop_3
+    fullPath: E:/Fiverr/Kompeteverse/Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_RadiusTag_PW - Prop_3
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20231222 - 051558_LayerGameObject_4096_5
+    assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerGameObject_4096_5
+    fullPath: E:/Fiverr/Kompeteverse/Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerGameObject_4096_5
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20231222 - 051558_LayerGameObject_3072_1
+    assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerGameObject_3072_1
+    fullPath: E:/Fiverr/Kompeteverse/Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerGameObject_3072_1
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20231222 - 051558_LayerTree_7168_2
+    assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerTree_7168_2
+    fullPath: E:/Fiverr/Kompeteverse/Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerTree_7168_2
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20231222 - 051558_LayerGameObject_4096_50
+    assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerGameObject_4096_50
+    fullPath: E:/Fiverr/Kompeteverse/Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerGameObject_4096_50
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20231222 - 051558_LayerGameObject_3072_5
+    assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerGameObject_3072_5
+    fullPath: E:/Fiverr/Kompeteverse/Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerGameObject_3072_5
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20231222 - 051558_LayerGameObject_4096_60
+    assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerGameObject_4096_60
+    fullPath: E:/Fiverr/Kompeteverse/Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerGameObject_4096_60
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20231222 - 051558_LayerTree_7168_5
+    assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerTree_7168_5
+    fullPath: E:/Fiverr/Kompeteverse/Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerTree_7168_5
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20231222 - 051558_LayerGameObject_4096_10
+    assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerGameObject_4096_10
+    fullPath: E:/Fiverr/Kompeteverse/Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerGameObject_4096_10
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20231222 - 051558_LayerTree_3072_0
+    assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerTree_3072_0
+    fullPath: E:/Fiverr/Kompeteverse/Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerTree_3072_0
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20231222 - 051558_LayerTree_4096_0
+    assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerTree_4096_0
+    fullPath: E:/Fiverr/Kompeteverse/Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerTree_4096_0
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20231222 - 051558_LayerTree_0_0
+    assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerTree_0_0
+    fullPath: E:/Fiverr/Kompeteverse/Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerTree_0_0
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20231222 - 051558_LayerTree_1024_0
+    assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerTree_1024_0
+    fullPath: E:/Fiverr/Kompeteverse/Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerTree_1024_0
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20231222 - 051558_LayerGameObject_7168_10
+    assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerGameObject_7168_10
+    fullPath: E:/Fiverr/Kompeteverse/Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20231222
+      - 051558/Terrain_0_0-20231222 - 051558_LayerGameObject_7168_10
+    texture: {fileID: 0}
+  m_worldBiomeMaskSettings: {fileID: 0}

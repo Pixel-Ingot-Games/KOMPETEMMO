@@ -1,0 +1,225 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e251860fcd970734c9f14ebd98a146c3, type: 3}
+  m_Name: GS-20231222 - 031811
+  m_EditorClassIdentifier: 
+  m_name: Session 20231222-031811
+  m_description: 'Rocking out at Creativity Central!
+
+
+    If you like Gaia please
+    consider rating it :)'
+  m_previewImage: {fileID: 0}
+  m_dateCreated: 12/22/2023 3:18:11 AM
+  m_terrainWidth: 1024
+  m_terrainDepth: 1024
+  m_terrainHeight: 1024
+  m_seaLevel: 25
+  m_spawnDensity: 0.8
+  m_isLocked: 0
+  m_previewImageBytes: 
+  m_previewImageWidth: 0
+  m_previewImageHeight: 0
+  m_operations:
+  - m_description: 'Creating World: 3 x 3 tiles, tile size: 1024'
+    m_operationType: 0
+    m_isActive: 1
+    m_affectedTerrainNames: []
+    m_operationDateTime: 12/22/2023 3:18:26 AM
+    scriptableObjectAssetGUID: 82542666e569e70478008e685c8c1c99
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Clear World
+    m_operationType: 10
+    m_isActive: 1
+    m_affectedTerrainNames: []
+    m_operationDateTime: 12/22/2023 3:21:29 AM
+    scriptableObjectAssetGUID: 
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: 'Creating World: 3 x 3 tiles, tile size: 1024'
+    m_operationType: 0
+    m_isActive: 1
+    m_affectedTerrainNames: []
+    m_operationDateTime: 12/22/2023 3:21:29 AM
+    scriptableObjectAssetGUID: 6ae3f9827da12b74ea16ee65043b7b3b
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Clear World
+    m_operationType: 10
+    m_isActive: 1
+    m_affectedTerrainNames: []
+    m_operationDateTime: 12/22/2023 3:22:40 AM
+    scriptableObjectAssetGUID: 
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: 'Creating World: 3 x 3 tiles, tile size: 1024'
+    m_operationType: 0
+    m_isActive: 1
+    m_affectedTerrainNames: []
+    m_operationDateTime: 12/22/2023 3:22:40 AM
+    scriptableObjectAssetGUID: c3f8e01674073a64ca1dcc14f956e0be
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  m_terrainMinMaxCache:
+  - guid: 28029df478d42d84c9cc46a1be6554df
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 0
+  - guid: 3bd3a7b2091cf9d49b3a162577844636
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 0
+  - guid: a8e828ba75c249748ab2876f511d0f32
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 0
+  - guid: f6fd19492e94fcc47ac9ec52277d4ede
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 0
+  - guid: 5c133b9cd757ac54ea6e30f4083a1e4e
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 0
+  - guid: 5b34c539443ca9e4ab25b5c9d120ad6b
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 0
+  - guid: 10a7ecf6099d8bd48ba2f608d2292a18
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 0
+  - guid: 14daf37da9f66fd45af7205ccdc27e83
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 0
+  - guid: 17b7853a0b799c64bb7a05b87dcbecf5
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 0
+  - guid: daf8967d31cdd1841b1e792425675630
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 140.18964
+  - guid: 14b6793b923a7834dbc073cef48bc310
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 164.56502
+  - guid: 62c0956a68a28ab40b923134549de8d9
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 73.219864
+  - guid: fe56a86631447324fadb6fde25075024
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 144.40845
+  - guid: 7fa3553d039a87f47a259c23b8be0d09
+    isWorldmap: 0
+    recalculate: 0
+    min: 60.12592
+    max: 174.1589
+  - guid: 9a63098b37535454dbd866167ad09326
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 153.06483
+  - guid: f52601585da61c3498f67c360b2fe637
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 144.34595
+  - guid: 081b05b33cebd594a8a91f9d1bb233d3
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 155.03362
+  - guid: 30118368443c8994995c60836200cf72
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 156.43988
+  - guid: b993d6094fd318343a37f7e4886530fb
+    isWorldmap: 0
+    recalculate: 0
+    min: 136.37708
+    max: 386.4434
+  - guid: 91b864e7d91c97d4fb5f88febcfa96ff
+    isWorldmap: 0
+    recalculate: 0
+    min: 126.81444
+    max: 338.38016
+  - guid: 079fed643a3b11a4dac308411c0d2b6d
+    isWorldmap: 0
+    recalculate: 0
+    min: 127.314445
+    max: 373.5057
+  - guid: a076c08d2881e0d498761740d91d5985
+    isWorldmap: 0
+    recalculate: 0
+    min: 124.5019
+    max: 364.0993
+  - guid: e8273f448ed97c04abf741d40b1a61a4
+    isWorldmap: 0
+    recalculate: 0
+    min: 113.62673
+    max: 173.03389
+  - guid: 79a180b211794064189d2652cf0db04f
+    isWorldmap: 0
+    recalculate: 0
+    min: 121.00185
+    max: 407.56873
+  - guid: 470cebe8306c36e4ca1e058a4722b597
+    isWorldmap: 0
+    recalculate: 0
+    min: 137.28334
+    max: 420.1314
+  - guid: c739102e0f880b24cab9d57419fb38e3
+    isWorldmap: 0
+    recalculate: 0
+    min: 124.93941
+    max: 300.03583
+  - guid: 02e1c87b711efc242b95c02df6dbc40a
+    isWorldmap: 0
+    recalculate: 0
+    min: 157.87741
+    max: 387.53717
+  - guid: Worldmap
+    isWorldmap: 1
+    recalculate: 0
+    min: 112.58182
+    max: 211.95284
+  m_bakedMaskCacheEntries: []
+  m_worldBiomeMaskSettings: {fileID: 0}
