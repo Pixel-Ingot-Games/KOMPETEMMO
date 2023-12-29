@@ -80,7 +80,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e173694cbae17ac49be045f17e28062d, type: 2}
   - {fileID: 11400000, guid: fdec3c4c775f7b944ab32bc999c20531, type: 2}
   - {fileID: 11400000, guid: 81b0e93a964e9804c9806f8bde6ba9ec, type: 2}
-  - {fileID: 11400000, guid: e47c68252cc3da14db3198dc00441d0a, type: 2}
   m_exportTerrainSettings:
   - {fileID: 11400000, guid: e2f4c9ca1bbf7e14f8cf0968afef1545, type: 2}
   - {fileID: 11400000, guid: 4df53086319f20747ae21f39ef7a76aa, type: 2}

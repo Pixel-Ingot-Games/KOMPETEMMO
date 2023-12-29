@@ -82,6 +82,8 @@ MonoBehaviour:
   - SynchronizeItemParametersRPC
   - SynchronizeParametersRPC
   - UpdateAttributeRPC
+  - RPCOnFinishRace
+  - UpdateTotalScore
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
