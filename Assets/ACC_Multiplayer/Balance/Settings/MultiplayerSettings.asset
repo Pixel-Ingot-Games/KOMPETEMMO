@@ -4,7 +4,8 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -42,8 +43,7 @@ MonoBehaviour:
   m_BadPingSprite: {fileID: 21300000, guid: 99e553fe120b3be4ca3c44399068dc86, type: 3}
   m_MediumPingSprite: {fileID: 21300002, guid: 99e553fe120b3be4ca3c44399068dc86, type: 3}
   m_GoodPingSprite: {fileID: 21300004, guid: 99e553fe120b3be4ca3c44399068dc86, type: 3}
-  m_VeryGoodPingSprite: {fileID: 21300006, guid: 99e553fe120b3be4ca3c44399068dc86,
-    type: 3}
+  m_VeryGoodPingSprite: {fileID: 21300006, guid: 99e553fe120b3be4ca3c44399068dc86, type: 3}
   m_MediumPing: 150
   m_GoodPing: 100
   m_VeryGoodPing: 50
@@ -52,6 +52,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1fc5dd5df3834774cbc30e73b49d23d0, type: 2}
   - {fileID: 11400000, guid: 50d10d34ba451be4ba946f1846f0b217, type: 2}
   - {fileID: 11400000, guid: a4235d822ad54f0409dec4361d4472bd, type: 2}
+  - {fileID: 11400000, guid: ce3431018b21d88458a3da4977339ec8, type: 2}
+  - {fileID: 11400000, guid: 6bdb2d5d9a8ae9347b326d7bb9b69a49, type: 2}
   m_AvailableCarsForMultiplayer:
   - {fileID: 11400000, guid: 68d0a29c5dc873e46bdd248870a62876, type: 2}
   - {fileID: 11400000, guid: c1f9e5f31478f4f41947a387072d07b3, type: 2}
@@ -68,8 +70,7 @@ MonoBehaviour:
   m_DistanceFastSync: 4
   m_DistanceTeleport: 8
   m_ShowNickNameCode: 9
-  m_NickNameInWorld: {fileID: 114777481735260646, guid: 34615e2adb0b955498570b9575b70293,
-    type: 2}
+  m_NickNameInWorld: {fileID: 114777481735260646, guid: 34615e2adb0b955498570b9575b70293, type: 3}
   m_NickNameY: 2.3
   m_NickNameColors:
   - {r: 0, g: 0.7441859, b: 1, a: 0.5882353}

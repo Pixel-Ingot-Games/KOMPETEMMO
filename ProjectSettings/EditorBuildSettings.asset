@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/RaceTrack2.unity
+    guid: 5187cbc11e2f0104b8ce4b2cbf1aa45f
+  - enabled: 0
     path: Assets/Scenes/RaceTrack1.unity
     guid: 1a122974be1cf944bac45c1ec8ec8530
   - enabled: 0
@@ -35,4 +38,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ACC_Multiplayer/Scenes/Regimes/RaceRegimeScene.unity
     guid: 6041af57b36d04d478626ba10727273e
+  - enabled: 1
+    path: Assets/Scenes/Track Perma.unity
+    guid: 59a2766295fec3e48b0fb275e4c31906
+  - enabled: 1
+    path: Assets/Scenes/Track Neverra.unity
+    guid: ea99f971133e465449298fcf8e01a0fe
   m_configObjects: {}

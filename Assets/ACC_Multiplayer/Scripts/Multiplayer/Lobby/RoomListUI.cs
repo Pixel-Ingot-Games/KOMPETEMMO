@@ -66,7 +66,7 @@ public class RoomListUI : MonoBehaviour
 		Timer -= Time.deltaTime;
 	}
 
-	void ConnectToRandomRoom()
+	public void ConnectToRandomRoom()
 	{
 		Hashtable customProperties = new Hashtable ();
 		customProperties.Add (C.RandomRoom, true);

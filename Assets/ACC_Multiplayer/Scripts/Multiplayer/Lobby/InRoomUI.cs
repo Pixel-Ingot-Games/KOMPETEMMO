@@ -57,7 +57,16 @@ public class InRoomUI : MonoBehaviour, IInRoomCallbacks, IOnEventCallback
 
 		ReadyButton.onClick.AddListener (OnReadyClick);
 	}
-
+	public void selectcarfunc()
+    {
+		WindowsController.Instance.OpenWindow(SelectCarMenuUI);
+		SelectCarMenuUI.OnSelectCarAction = OnSelectCar;
+	}
+	public void selecttrackfunc()
+	{
+		WindowsController.Instance.OpenWindow(SelectTrackUI);
+		SelectTrackUI.OnSelectTrackAction = OnSelectTrack;
+	}
 	void OnEnable ()
 	{
 		PhotonNetwork.AddCallbackTarget (this);
@@ -132,7 +141,7 @@ public class InRoomUI : MonoBehaviour, IInRoomCallbacks, IOnEventCallback
 		}
 	}
 
-	void OnReadyClick ()
+	public void OnReadyClick ()
 	{
 		LocalPlayer.SetCustomProperties (C.IsReady, !(bool)LocalPlayer.CustomProperties[C.IsReady], C.CarColorIndex, PlayerProfile.GetCarColorIndex(WorldLoading.PlayerCar));
 	}
