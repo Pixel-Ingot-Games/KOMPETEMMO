@@ -37,6 +37,10 @@ public class LobbyManager :WindowWithShowHideAnimators, ILobbyCallbacks, IMatchm
 
     void Start ()
 	{
+        if (!PhotonNetwork.IsConnected)
+        {
+			PhotonNetwork.ConnectUsingSettings();
+        }
         //Initialize custom back action.
 
         PhotonNetwork.EnableCloseConnection = true;
