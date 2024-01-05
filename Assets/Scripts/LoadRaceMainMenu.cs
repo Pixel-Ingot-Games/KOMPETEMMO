@@ -23,4 +23,5 @@ public class LoadRaceMainMenu : MonoBehaviourPunCallbacks
         PhotonNetwork.LoadLevel("MainMenuScene");
         Debug.LogError("Left room");
     }
+
 }

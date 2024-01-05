@@ -45,7 +45,14 @@ public class InGameMenu :MonoBehaviour
 			RestartButton.onClick.AddListener (RestartScene);
 		}
 	}
-
+	public void resume()
+    {
+		Windows.OnBack();
+	}
+	public void mainmenu()
+	{
+		Exit();
+	}
 	private void Update ()
 	{
 		if (Windows.CurrentWindow == null && !InGameMainMenu.gameObject.activeInHierarchy && !GameController.RaceIsEnded && 
