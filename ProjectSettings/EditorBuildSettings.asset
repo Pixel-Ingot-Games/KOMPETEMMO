@@ -8,40 +8,37 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/RaceTrack2.unity
     guid: 5187cbc11e2f0104b8ce4b2cbf1aa45f
+  - enabled: 1
+    path: Assets/Scenes/Airportmenu.unity
+    guid: 195e35c41abc3814a973814da5194fdb
+  - enabled: 1
+    path: Assets/Scenes/AirportTest.unity
+    guid: dd55592b0bb14c04995710039bfc9328
   - enabled: 0
     path: Assets/Scenes/RaceTrack1.unity
     guid: 1a122974be1cf944bac45c1ec8ec8530
-  - enabled: 1
+  - enabled: 0
     path: Assets/ACC_Multiplayer/Scenes/AttentionScene.unity
     guid: 777c336ab6dc06b4da54be0ee9435aa4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenuScene.unity
     guid: b8c98a3ff806355449e8a355b2fe7df7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GamePlay.unity
     guid: 7935eaac87c0dec4d9e912ab51d3f3c4
-  - enabled: 1
-    path: Assets/ACC_Multiplayer/Scenes/PortForRace.unity
-    guid: 0c3de3b7e6c8eb64fa4ff3ff2d3de403
-  - enabled: 1
-    path: Assets/ACC_Multiplayer/Scenes/PortForDrift.unity
-    guid: 6073bca69f4b15d42a46ca19a192b549
-  - enabled: 1
-    path: Assets/ACC_Multiplayer/Scenes/RaceTrack.unity
-    guid: 4854a3fd49b9bfc4d92015809f70203a
-  - enabled: 1
+  - enabled: 0
     path: Assets/ACC_Multiplayer/Scenes/Regimes/DriftRegimeScene.unity
     guid: 03a646b2861514d48a6a642744db3d64
-  - enabled: 1
+  - enabled: 0
     path: Assets/ACC_Multiplayer/Scenes/Regimes/RaceRegimeScene.unity
     guid: 6041af57b36d04d478626ba10727273e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Track Perma.unity
     guid: 59a2766295fec3e48b0fb275e4c31906
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Track Neverra.unity
     guid: ea99f971133e465449298fcf8e01a0fe
   m_configObjects: {}

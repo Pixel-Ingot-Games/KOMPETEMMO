@@ -41,13 +41,13 @@ namespace GameLauncher
         /// Remote host starts with 'https://' or 'http://'
         /// Local host must start with 'file:///'
         /// </summary>
-        const string HOST_URL = "https://game-launcher.net/GameLauncher/"; // Already working HOST_URL: https://game-launcher.net/GameLauncher/
+        const string HOST_URL = "https://havenverse.world/PC/GameLauncher/"; // Already working HOST_URL: https://game-launcher.net/GameLauncher/
 
         // This is the name of the folder where your app is located
         public static string MAINAPP_SUBDIRECTORY = "App";
 
         // This is the name of the app to execute
-        public string CURRENT_MAINAPP_EXECUTABLE = "MyApp.exe";
+        public string CURRENT_MAINAPP_EXECUTABLE = "HavenVerse.exe";
         /* Main app executable will be located at '{APPLICATION_DIRECTORY}/{CurrentSelectedEnvironment}/{MAINAPP_EXECUTABLE}' */
 
         // Show Release environment only?

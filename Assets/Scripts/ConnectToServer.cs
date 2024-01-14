@@ -11,8 +11,8 @@ public class ConnectToServer : MonoBehaviourPunCallbacks
     {
         if (!PhotonNetwork.IsConnected)
         {
-            BeforeConnected.SetActive(true);
-            AfterConnected.SetActive(false);
+            //BeforeConnected.SetActive(true);
+          //  AfterConnected.SetActive(false);
             PhotonNetwork.ConnectUsingSettings();
             Debug.Log("Connecting To Photon Servers");
         }
@@ -28,8 +28,8 @@ public class ConnectToServer : MonoBehaviourPunCallbacks
     }
     public override void OnJoinedLobby()
     {
-        BeforeConnected.SetActive(false);
-        AfterConnected.SetActive(true);
+      //  BeforeConnected.SetActive(false);
+     //   AfterConnected.SetActive(true);
         Debug.Log("Connected To Lobby Server");
     }
     public void Play()
@@ -38,7 +38,7 @@ public class ConnectToServer : MonoBehaviourPunCallbacks
     }
     public override void OnJoinedRoom()
     {
-       // PhotonNetwork.LoadLevel("Game");
+        PhotonNetwork.LoadLevel("AirportTest");
        // Loading.SetActive(true);
     }
 }

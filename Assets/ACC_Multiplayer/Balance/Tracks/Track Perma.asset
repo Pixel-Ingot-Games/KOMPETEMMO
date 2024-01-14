@@ -17,7 +17,7 @@ MonoBehaviour:
   CompleteTrackForUnlock: {fileID: 0}
   ShowProperty: 0
   m_TrackName: Track Perma
-  m_TrackIcon: {fileID: 21300000, guid: 94142745e0d92074185fd4838c2519ad, type: 3}
+  m_TrackIcon: {fileID: 21300000, guid: 24656540f877e2641ac647a841f9f4fd, type: 3}
   m_SceneName: Track Perma
   m_GameController: {fileID: 1705375365328163608, guid: d25968fad7a6b014e8fea86c0cf253cf, type: 3}
   m_LapsCount: 3

@@ -4,7 +4,8 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -18,6 +19,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b3a9983826cef5747b541619547540b2, type: 2}
   - {fileID: 11400000, guid: afa8df00e52633942ab499de775268b0, type: 2}
   - {fileID: 11400000, guid: 3dec724774c7f2f4ebc390cb30edc713, type: 2}
+  - {fileID: 11400000, guid: 74d1f14e6a560114a8f8eb43af8aaae8, type: 2}
+  - {fileID: 11400000, guid: 4756431dce8c9664dba0a3f82b0126a2, type: 2}
+  - {fileID: 11400000, guid: d36e7d45e7608844da3462ced18df8f0, type: 2}
+  - {fileID: 11400000, guid: 8b122549c5b75ab4a9b758b25946a6a5, type: 2}
+  - {fileID: 11400000, guid: db0fc22b34e2aa24597489d33a596d86, type: 2}
   m_AiConfog:
     MaxSpeed: 200
     MinSpeed: 30

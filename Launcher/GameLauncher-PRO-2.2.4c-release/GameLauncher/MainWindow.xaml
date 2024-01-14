@@ -88,9 +88,10 @@
                     <Rectangle.Fill>
                         <RadialGradientBrush GradientOrigin="0.125,0.05" Center="0,1" RadiusX="0.7" RadiusY="0.7">
                             <GradientStop Color="Black" Offset="0"/>
-                            <GradientStop Color="#E502A2D8" Offset="0"/>
-                            <GradientStop Color="#0C02A2D8" Offset="0.35"/>
-                            <GradientStop Color="#0002A2D8" Offset="1"/>
+                            <GradientStop Color="#E502A2D8" Offset="0.047"/>
+                            <GradientStop Color="#0C02A2D8" Offset="1"/>
+                            <GradientStop Color="#99FD09B1" Offset="0.547"/>
+                            <GradientStop Color="#00ED12B3" Offset="1"/>
                         </RadialGradientBrush>
                     </Rectangle.Fill>
                     <Rectangle.Effect>
@@ -129,11 +130,11 @@
                         <Image Style="{DynamicResource MenuIcon}" x:Name="Menu_Logo" Stretch="Uniform" 
                                 RenderOptions.BitmapScalingMode="HighQuality"
                                 Source="pack://application:,,,/Resources/Images/Launcher Images/application_icon.png" 
-                                Cursor="Hand" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" MouseDown="Menu_Logo_MouseDown"/>
+                                Cursor="Hand" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" MouseDown="Menu_Logo_MouseDown" Visibility="Hidden"/>
                         <Image Stretch="Uniform" 
                             RenderOptions.BitmapScalingMode="HighQuality"
                             Source="pack://application:,,,/Resources/Icons/Actions/action_arrow_down.png" 
-                            Cursor="Hand" VerticalAlignment="Center" HorizontalAlignment="Right" Width="10" MouseDown="Menu_Logo_MouseDown"/>
+                            Cursor="Hand" VerticalAlignment="Center" HorizontalAlignment="Right" Width="10" MouseDown="Menu_Logo_MouseDown" Visibility="Hidden"/>
                     </Grid>
                     <TextBlock Style="{DynamicResource MainNavigationTextStyle}" x:Name="TopButton_MyAccount"
                         Grid.Column="1"
@@ -141,7 +142,7 @@
                         HorizontalAlignment="Center" 
                         FontFamily="Fonts/#Dosis"
                         FontWeight="Bold"
-                        FontSize="24" Cursor="Hand" ToolTip="Open external link" Text="My Account" Margin="20,0,20,0" MouseDown="TopButton_MyAccount_MouseDown"/>
+                        FontSize="24" Cursor="Hand" ToolTip="Open external link" Text="My Account" Margin="20,0,20,0" MouseDown="TopButton_MyAccount_MouseDown" Visibility="Hidden"/>
                     <TextBlock x:Name="TopButton_Forum"
                         Text="Forum"
                         Foreground="#FFCCCCCC"
@@ -158,7 +159,7 @@
                         FontFamily="Fonts/#Dosis"
                         FontWeight="Bold"
                     
-                        FontSize="30" ToolTip="Open external link" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20,0,20,10"/>
+                        FontSize="30" ToolTip="Open external link" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20,0,20,10" Visibility="Hidden"/>
 
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" Height="50">
@@ -195,7 +196,7 @@
                         <Grid x:Name="Left_Panel_Container" Margin="20,0,20,20" VerticalAlignment="Center">
                             <Image x:Name="Logo" Stretch="Uniform" 
                                     RenderOptions.BitmapScalingMode="HighQuality"
-                                    Source="/Resources/Images/Examples/example_logo_game_launcher.png" Margin="0,10,0,555">
+                                    Source="/IMG_4120.PNG" Margin="0,10,0,555">
                                 <Image.Effect>
                                     <DropShadowEffect BlurRadius="8.6" Opacity="0.25" Direction="-90"/>
                                 </Image.Effect>

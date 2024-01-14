@@ -1,11 +1,11 @@
 using System;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
-
+using Photon.Pun;
 namespace UnityStandardAssets.Vehicles.Aeroplane
 {
     [RequireComponent(typeof (AeroplaneController))]
-    public class AeroplaneUserControl4Axis : MonoBehaviour
+    public class AeroplaneUserControl4Axis : MonoBehaviourPunCallbacks, IPunObservable
     {
         // these max angles are only used on mobile, due to the way pitch and roll input are handled
         public float maxRollAngle = 80;
@@ -16,12 +16,16 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
         private float m_Throttle;
         private bool m_AirBrakes;
         private float m_Yaw;
-
+        public Vector3 remotePosition;
 
         private void Awake()
         {
             // Set up the reference to the aeroplane controller.
             m_Aeroplane = GetComponent<AeroplaneController>();
+            if (!photonView.IsMine)
+            {
+                this.enabled = false;
+            }
         }
 
 
@@ -36,6 +40,7 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
 #if MOBILE_INPUT
         AdjustInputForMobileControls(ref roll, ref pitch, ref m_Throttle);
 #endif
+
             // Pass the input to the aeroplane
             m_Aeroplane.Move(roll, pitch, m_Yaw, m_Throttle, m_AirBrakes);
         }
@@ -55,6 +60,18 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
             float intendedPitchAngle = pitch*maxPitchAngle*Mathf.Deg2Rad;
             roll = Mathf.Clamp((intendedRollAngle - m_Aeroplane.RollAngle), -1, 1);
             pitch = Mathf.Clamp((intendedPitchAngle - m_Aeroplane.PitchAngle), -1, 1);
+        }
+
+        public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+        {
+            if (stream.IsWriting)
+            {
+                stream.SendNext(transform.position);
+            }
+            else
+            {
+                remotePosition = (Vector3)stream.ReceiveNext();
+            }
         }
     }
 }

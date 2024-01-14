@@ -17,7 +17,7 @@ MonoBehaviour:
   CompleteTrackForUnlock: {fileID: 0}
   ShowProperty: 0
   m_TrackName: Track Neverra
-  m_TrackIcon: {fileID: 21300000, guid: 9e002835cde9a1c4eadfa0f3ea4f75d5, type: 3}
+  m_TrackIcon: {fileID: 21300000, guid: 0c200cbd13366bc48851af8c1516165b, type: 3}
   m_SceneName: Track Neverra
   m_GameController: {fileID: 4392253738916923754, guid: d80f5ebdd6b50e04683b10ad7f4d44b2, type: 3}
   m_LapsCount: 3
