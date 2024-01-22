@@ -1,0 +1,174 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e251860fcd970734c9f14ebd98a146c3, type: 3}
+  m_Name: GS-20240114 - 170420
+  m_EditorClassIdentifier: 
+  m_name: Session 20240114-170420
+  m_description: 'Rocking out at Creativity Central!
+
+
+    If you like Gaia please
+    consider rating it :)'
+  m_previewImage: {fileID: 0}
+  m_dateCreated: 1/14/2024 5:04:20 PM
+  m_terrainWidth: 1024
+  m_terrainDepth: 2048
+  m_terrainHeight: 1024
+  m_seaLevel: 25
+  m_spawnDensity: 0.6
+  m_isLocked: 0
+  m_previewImageBytes: 
+  m_previewImageWidth: 0
+  m_previewImageHeight: 0
+  m_operations:
+  - m_description: Clear World
+    m_operationType: 10
+    m_isActive: 1
+    m_affectedTerrainNames: []
+    m_operationDateTime: 1/14/2024 5:06:43 PM
+    scriptableObjectAssetGUID: 
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: 'Creating World: 3 x 3 tiles, tile size: 1024'
+    m_operationType: 0
+    m_isActive: 1
+    m_affectedTerrainNames: []
+    m_operationDateTime: 1/14/2024 5:06:43 PM
+    scriptableObjectAssetGUID: 9ae4c89b23c63964b95ab3e76eb9b7fb
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Multiple Spawners (4)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20240114 - 170643
+    - Terrain_0_1-20240114 - 170643
+    - Terrain_0_2-20240114 - 170643
+    - Terrain_1_0-20240114 - 170643
+    - Terrain_1_1-20240114 - 170643
+    - Terrain_1_2-20240114 - 170643
+    - Terrain_2_0-20240114 - 170643
+    - Terrain_2_1-20240114 - 170643
+    - Terrain_2_2-20240114 - 170643
+    m_operationDateTime: 1/14/2024 5:07:57 PM
+    scriptableObjectAssetGUID: ea9dc82ff2157cf4dbc3bbc53a888166
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Clearing - Trees Details GOs SpawnExt Probes, CurrentTerrainOnly,
+      AnySource
+    m_operationType: 3
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_1_1-20240114 - 170643
+    m_operationDateTime: 1/19/2024 6:15:16 PM
+    scriptableObjectAssetGUID: 5de72dff3a656384da431c906c4ab805
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Clearing - Trees Details GOs SpawnExt Probes, AllTerrains, AnySource
+    m_operationType: 3
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_1_2-20240114 - 170643
+    - Terrain_1_0-20240114 - 170643
+    - Terrain_2_1-20240114 - 170643
+    - Terrain_2_2-20240114 - 170643
+    - Terrain_1_1-20240114 - 170643
+    - Terrain_0_0-20240114 - 170643
+    - Terrain_2_0-20240114 - 170643
+    - Terrain_0_1-20240114 - 170643
+    - Terrain_0_2-20240114 - 170643
+    m_operationDateTime: 1/19/2024 6:15:23 PM
+    scriptableObjectAssetGUID: 53b24f879847fa14bb370d5f2f2afcc2
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Multiple Spawners (3)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_1_2-20240114 - 170643
+    - Terrain_1_0-20240114 - 170643
+    - Terrain_2_1-20240114 - 170643
+    - Terrain_2_2-20240114 - 170643
+    - Terrain_1_1-20240114 - 170643
+    - Terrain_0_0-20240114 - 170643
+    - Terrain_2_0-20240114 - 170643
+    - Terrain_0_1-20240114 - 170643
+    - Terrain_0_2-20240114 - 170643
+    m_operationDateTime: 1/19/2024 6:15:32 PM
+    scriptableObjectAssetGUID: 657aed8566f9c1244af03aecb970458f
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  m_terrainMinMaxCache:
+  - guid: f35093d464684f146817235da64d2e0a
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 90.43888
+  - guid: 6b3408855e9229c4dbae7eea500cf325
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 145.68973
+  - guid: 33f1c1b675383944c9c0d519902cdaf8
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 111.75171
+  - guid: 37f64eec3966f8345a5e888632c43bfd
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 281.3793
+  - guid: ca3aea5124d06de47913b54a42a05813
+    isWorldmap: 0
+    recalculate: 0
+    min: 8.937636
+    max: 366.44308
+  - guid: 8672d3fb6dac8e147bcf6ea6cfa9ee80
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 110.376686
+  - guid: ac4b9b4cb8666ff4dbe9b3d36c8b980c
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 126.12692
+  - guid: 4b53ce3ea8de273428cb58443ec50744
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 134.12704
+  - guid: 2c66937b3670f1d42b0c263a6c032565
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 119.31432
+  - guid: Worldmap
+    isWorldmap: 1
+    recalculate: 0
+    min: 0
+    max: 0
+  m_bakedMaskCacheEntries: []
+  m_worldBiomeMaskSettings: {fileID: 0}
