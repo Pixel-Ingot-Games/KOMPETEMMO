@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using Photon.Pun;
 using UnityStandardAssets.Vehicles.Aeroplane;
-
+using UnityEngine.SceneManagement;
 public class RaceManager : MonoBehaviourPunCallbacks
 {
     public GameObject[] Checkpoints;
@@ -23,21 +23,23 @@ public class RaceManager : MonoBehaviourPunCallbacks
     public Transform[] InstanPos;
     bool wait;
     PhotonView photonView;
+    public RewardCoin rc;
     void Start()
-    {
-
+    {  
         photonView = PhotonView.Get(this);
+        PlayerJet = PlayerPrefs.GetInt("PlayerJet");
+        GameObject Pl = PhotonNetwork.Instantiate(JetPrefabs[PlayerJet].name, InstanPos[PhotonNetwork.LocalPlayer.ActorNumber].position, InstanPos[PhotonNetwork.LocalPlayer.ActorNumber].rotation);
         Player = GameObject.FindGameObjectWithTag("Player");
         OtherPlayers = GameObject.FindGameObjectsWithTag("Jet");
         LapCompleted();
         currentLap = 1;
+       
         if (PhotonNetwork.CurrentRoom.PlayerCount < MaxPlayers)
         {
-           // WaitingForPlayers.SetActive(true);
+            //WaitingForPlayers.SetActive(true);
            // wait = true;
         }
-        PlayerJet = PlayerPrefs.GetInt("PlayerJet");
-        GameObject Pl = PhotonNetwork.Instantiate(JetPrefabs[PlayerJet].name, InstanPos[PhotonNetwork.LocalPlayer.ActorNumber].position, InstanPos[PhotonNetwork.LocalPlayer.ActorNumber].rotation);
+        
     }
     void Update()
     {
@@ -69,6 +71,7 @@ public class RaceManager : MonoBehaviourPunCallbacks
         if (currentLap == Laps - 1)
         {
             FinishLineText.text = "FINISH";
+
         }
        
     }
@@ -82,5 +85,12 @@ public class RaceManager : MonoBehaviourPunCallbacks
         Checkpoints[0].SetActive(true);
         Checkpoints[1].SetActive(true);
     }
-
+    public void Leave()
+    {
+        PhotonNetwork.LeaveRoom();
+    }
+    public override void OnLeftRoom()
+    {
+        SceneManager.LoadSceneAsync("Airportmenu");
+    }
 }

@@ -10,10 +10,12 @@ public class RaceRatingPlayerUI :MonoBehaviour
 	[SerializeField] TextMeshProUGUI TimeText;
 
 	public RectTransform Rect { get; private set; }
-
+	public bool first;
+	public RewardCoin rc;
 	void Awake ()
 	{
 		Rect = transform as RectTransform;
+        
 	}
 
 	public void UpdateData (string playerName, int position, string time = "")
@@ -24,5 +26,16 @@ public class RaceRatingPlayerUI :MonoBehaviour
 		{
 			TimeText.text = time;
 		}
+        if (first)
+        {
+            if (playerName==PlayerPrefs.GetString("username"))
+            {
+				Debug.Log("ending log");
+				rc.amount = 30;
+				rc.CallAddCoin();
+			}
+			
+		}
+		
 	}
 }

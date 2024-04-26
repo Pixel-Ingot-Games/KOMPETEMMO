@@ -30,7 +30,7 @@ public class CarStatistic
 
 	public CarStatistic (CarController car, string playerName, bool isLocalCar = true)
 	{
-		PlayerName = playerName;
+		PlayerName = PlayerPrefs.GetString("username");
 		Car = car;
 		PositioningCar = Car.GetComponent<PositioningCar> ();
 		Car.CollisionAction += CollisionCar;

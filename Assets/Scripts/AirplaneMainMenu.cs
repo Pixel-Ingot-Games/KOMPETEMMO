@@ -1,11 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Photon.Pun;
+using Photon.Realtime;
 public class AirplaneMainMenu : MonoBehaviourPunCallbacks
 {
+    TypedLobby Jetracemode = new TypedLobby("jetmode", LobbyType.Default);
     public GameObject[] Jets;
     int currentjet;
+    public CoinCheck cc;
+    public PayCoin pc;
+    bool paid=true;
+    public GameObject LessBalance;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,12 +23,19 @@ public class AirplaneMainMenu : MonoBehaviourPunCallbacks
         }
         
     }
-
+    private void Update()
+    {
+        if (pc.paid && paid )
+        {
+            StartRace();
+            paid = false;
+        }
+    }
     public override void OnConnectedToMaster()
     {
         if (!PhotonNetwork.InLobby)
         {
-            PhotonNetwork.JoinLobby();
+            PhotonNetwork.JoinLobby(Jetracemode);
         }
 
         Debug.Log("Connected To Master Server");
@@ -31,6 +45,18 @@ public class AirplaneMainMenu : MonoBehaviourPunCallbacks
         Debug.Log("Connected To Lobby Server");
     }
     public void Play()
+    {
+        if (cc.coins>=10)
+        {
+            pc.amount = 10;
+            pc.CallPay();  
+        }
+        else
+        {
+            LessBalance.SetActive(true);
+        }
+    }
+    public void StartRace()
     {
         PlayerPrefs.SetInt("PlayerJet", currentjet);
         PhotonNetwork.JoinRandomOrCreateRoom();
@@ -69,5 +95,20 @@ public class AirplaneMainMenu : MonoBehaviourPunCallbacks
     {
         PlayerPrefs.SetString("PlayerJet", Jets[currentjet].name);
     }
-
+    public void Leave()
+    {
+        if (PhotonNetwork.InRoom)
+        {
+            PhotonNetwork.LeaveRoom();
+        }
+        else
+        {
+            SceneManager.LoadScene("LoadingGameplay");
+        }
+    }
+    public override void OnLeftRoom()
+    {
+        PhotonNetwork.LoadLevel("LoadingGameplay");
+        Debug.Log("Loading Race Menu");
+    }
 }

@@ -77,11 +77,6 @@ MonoBehaviour:
     m_terrainsFoldedOut: 0
     m_serializedExternalAction: 
   m_terrainMinMaxCache:
-  - guid: Worldmap
-    isWorldmap: 1
-    recalculate: 0
-    min: 0.062035337
-    max: 67.05538
   - guid: 8a42b4280e23c22419b385e648c8b84b
     isWorldmap: 0
     recalculate: 0
@@ -162,6 +157,16 @@ MonoBehaviour:
     recalculate: 0
     min: 0
     max: 18.656534
+  - guid: 1efde16fbee1d684b9d5e29120f23af5
+    isWorldmap: 0
+    recalculate: 0
+    min: 27.594172
+    max: 138.4396
+  - guid: Worldmap
+    isWorldmap: 1
+    recalculate: 0
+    min: 0
+    max: 0
   m_bakedMaskCacheEntries:
   - fileName: Terrain_2_2-20231222 - 054439_LayerGameObject_7168_3
     assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_2_2-20231222

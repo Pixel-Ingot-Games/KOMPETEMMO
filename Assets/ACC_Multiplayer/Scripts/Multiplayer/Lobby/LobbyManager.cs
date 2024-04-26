@@ -15,7 +15,8 @@ public class LobbyManager :WindowWithShowHideAnimators, ILobbyCallbacks, IMatchm
 	[SerializeField] InRoomUI InRoomHolder;
 	[SerializeField] InRoomUI InRandomRoomHolder;
 	[SerializeField] string LeaveRoomMessage = "leave the room?";
-
+	TypedLobby Carracemode = new TypedLobby("carmode", LobbyType.Default);
+	TypedLobby currentMode;
 	public bool InRoom
 	{
 		get
@@ -37,6 +38,7 @@ public class LobbyManager :WindowWithShowHideAnimators, ILobbyCallbacks, IMatchm
 
     void Start ()
 	{
+
         if (!PhotonNetwork.IsConnected)
         {
 			PhotonNetwork.ConnectUsingSettings();
@@ -68,22 +70,20 @@ public class LobbyManager :WindowWithShowHideAnimators, ILobbyCallbacks, IMatchm
 
 	void OnEnable ()
 	{
-		if (PhotonNetwork.NickName != PlayerProfile.NickName)
-		{
-			PhotonNetwork.NickName = PlayerProfile.NickName;
-		}
-
+		
+		PhotonNetwork.NickName = PlayerPrefs.GetString("username");
 		if (!PhotonNetwork.IsConnectedAndReady)
 		{
 			ConnectToServer ();
 		} 
 		else if (!PhotonNetwork.InLobby)
 		{
-			PhotonNetwork.JoinLobby ();
+			PhotonNetwork.JoinLobby(Carracemode);
 		}
 
 		PhotonNetwork.AddCallbackTarget (this);
 		UpdateHolders ();
+		Debug.Log("Lobby: "+PhotonNetwork.CurrentLobby);
 	}
 
 	void OnDisable ()
@@ -113,6 +113,7 @@ public class LobbyManager :WindowWithShowHideAnimators, ILobbyCallbacks, IMatchm
 		RoomListHolder.SetActive (!inRoom);
 		InRoomHolder.SetActive (inRoom && !inRandomRoom);
 		InRandomRoomHolder.SetActive (inRandomRoom);
+
 	}
 
 	public void OnJoinedRoom ()
@@ -121,7 +122,10 @@ public class LobbyManager :WindowWithShowHideAnimators, ILobbyCallbacks, IMatchm
 
 		UpdateHolders ();
 	}
-
+	public void leave()
+    {
+		PhotonNetwork.LeaveRoom();
+	}
 	public void OnLeftRoom ()
 	{
 		Debug.Log ("On left room");
@@ -129,6 +133,7 @@ public class LobbyManager :WindowWithShowHideAnimators, ILobbyCallbacks, IMatchm
 		UpdateHolders ();
 
 		InRoomHolder.RemoveAllPlayers ();
+		PhotonNetwork.LoadLevel("LoadingGameplay");
 	}
 
 	public void OnRoomListUpdate (List<RoomInfo> roomList)
@@ -175,11 +180,12 @@ public class LobbyManager :WindowWithShowHideAnimators, ILobbyCallbacks, IMatchm
 	public void OnConnectedToMaster ()
 	{
 		Debug.Log ("Connected to master");
-		PhotonNetwork.JoinLobby ();
+		PhotonNetwork.JoinLobby (Carracemode);
 	}
 
 	public void OnJoinedLobby ()
 	{
+		Debug.Log("Lobby: " + PhotonNetwork.CurrentLobby);
 		Debug.Log ("On joined lobby");
 	}
 

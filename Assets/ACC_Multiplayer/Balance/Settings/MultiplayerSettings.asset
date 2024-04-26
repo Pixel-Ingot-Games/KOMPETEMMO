@@ -48,20 +48,11 @@ MonoBehaviour:
   m_GoodPing: 100
   m_VeryGoodPing: 50
   m_AvailableTracksForMultiplayer:
-  - {fileID: 11400000, guid: f9e0e6de62358fa4d850a4208a22a894, type: 2}
-  - {fileID: 11400000, guid: 1fc5dd5df3834774cbc30e73b49d23d0, type: 2}
-  - {fileID: 11400000, guid: 50d10d34ba451be4ba946f1846f0b217, type: 2}
-  - {fileID: 11400000, guid: a4235d822ad54f0409dec4361d4472bd, type: 2}
   - {fileID: 11400000, guid: ce3431018b21d88458a3da4977339ec8, type: 2}
   - {fileID: 11400000, guid: 6bdb2d5d9a8ae9347b326d7bb9b69a49, type: 2}
   m_AvailableCarsForMultiplayer:
-  - {fileID: 11400000, guid: 68d0a29c5dc873e46bdd248870a62876, type: 2}
-  - {fileID: 11400000, guid: c1f9e5f31478f4f41947a387072d07b3, type: 2}
-  - {fileID: 11400000, guid: b3a9983826cef5747b541619547540b2, type: 2}
-  - {fileID: 11400000, guid: afa8df00e52633942ab499de775268b0, type: 2}
   - {fileID: 11400000, guid: 3dec724774c7f2f4ebc390cb30edc713, type: 2}
   - {fileID: 11400000, guid: 74d1f14e6a560114a8f8eb43af8aaae8, type: 2}
-  - {fileID: 11400000, guid: 4756431dce8c9664dba0a3f82b0126a2, type: 2}
   - {fileID: 11400000, guid: d36e7d45e7608844da3462ced18df8f0, type: 2}
   - {fileID: 11400000, guid: 8b122549c5b75ab4a9b758b25946a6a5, type: 2}
   - {fileID: 11400000, guid: db0fc22b34e2aa24597489d33a596d86, type: 2}

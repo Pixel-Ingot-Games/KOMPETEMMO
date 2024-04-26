@@ -28,7 +28,9 @@ public class InRoomUI : MonoBehaviour, IInRoomCallbacks, IOnEventCallback
 	[SerializeField] Button ReadyButton;
 	[SerializeField] ColorBlock ReadyColors;
 	[SerializeField] ColorBlock NotReadyColors;
-
+	public CoinCheck cc;
+	public PayCoin pc;
+	bool paid=true;
 	//Connected players dictionary.
 	Dictionary<Player, PlayerItemInRoomUI> Players = new Dictionary<Player, PlayerItemInRoomUI>();
 
@@ -38,8 +40,17 @@ public class InRoomUI : MonoBehaviour, IInRoomCallbacks, IOnEventCallback
 	Player LocalPlayer { get { return PhotonNetwork.LocalPlayer; } }
 
 	bool WaitStartGame;
+	public GameObject LessBalance;
+    private void Update()
+    {
+        if (pc.paid && paid)
+        {
+			OnReadyClick();
+			paid = false;
 
-	void Awake ()
+		}
+    }
+    void Awake ()
 	{
 		//Initialized all buttons.
 
@@ -144,8 +155,22 @@ public class InRoomUI : MonoBehaviour, IInRoomCallbacks, IOnEventCallback
 	public void OnReadyClick ()
 	{
 		LocalPlayer.SetCustomProperties (C.IsReady, !(bool)LocalPlayer.CustomProperties[C.IsReady], C.CarColorIndex, PlayerProfile.GetCarColorIndex(WorldLoading.PlayerCar));
+		//
+		//
+		
 	}
-
+	public void play()
+    {
+        if (cc.coins>=10)
+        {
+			pc.amount = 10;
+			pc.CallPay();
+        }
+        else
+        {
+			LessBalance.SetActive(true);
+        }
+    }
 	//Updating a player when changing any property.
 	void TryUpdateOrCreatePlayerItem (Player targetPlayer)
 	{

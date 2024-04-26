@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Cinemachine;
 /// <summary>
 /// Move and rotation camera controller
 /// </summary>
@@ -11,7 +11,7 @@ public class CameraController :Singleton<CameraController>
 {
 	[SerializeField] List<CameraPreset> CamerasPreset = new List<CameraPreset>();   //Camera presets
     [SerializeField] CarController OverrideCar;
-
+	public CinemachineVirtualCamera vc;
 	int ActivePresetIndex = -1;
 	public CameraPreset ActivePreset { get; private set; }
 
@@ -58,6 +58,8 @@ public class CameraController :Singleton<CameraController>
 		}
 		transform.position = TargetPoint;
 		ActivePreset.CameraHolder.rotation = TargetCar.transform.rotation;
+		vc.Follow = TargetCar.transform;
+		vc.LookAt = TargetCar.transform;
 	}
 
 	private void Update ()

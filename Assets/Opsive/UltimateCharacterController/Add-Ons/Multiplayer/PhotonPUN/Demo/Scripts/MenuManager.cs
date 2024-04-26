@@ -30,14 +30,14 @@ namespace Opsive.UltimateCharacterController.AddOns.Multiplayer.PhotonPun.Demo
         [SerializeField] protected Toggle m_PerspectiveToggle;
         public GameObject Loading;
         private bool m_IsConnecting;
-
+        public bool canconnect;
+        TypedLobby OpenWorld = new TypedLobby("openworld", LobbyType.Default);
         /// <summary>
         /// Initialize the default values.
         /// </summary>
         private void Awake()
         {
-            PhotonNetwork.AutomaticallySyncScene = true;
-
+            PhotonNetwork.AutomaticallySyncScene = false;
             if (m_PerspectiveToggle != null) {
 #if !FIRST_PERSON_CONTROLLER
                 m_PerspectiveToggle.isOn = false;
@@ -80,6 +80,7 @@ namespace Opsive.UltimateCharacterController.AddOns.Multiplayer.PhotonPun.Demo
         /// </summary>
         public void Connect()
         {
+
             if (m_IsConnecting) {
                 return;
             }
@@ -107,12 +108,22 @@ namespace Opsive.UltimateCharacterController.AddOns.Multiplayer.PhotonPun.Demo
         /// </summary>
         public override void OnConnectedToMaster()
         {
+            PhotonNetwork.NickName = PlayerPrefs.GetString("username");
             if (m_IsConnecting) {
-                PhotonNetwork.JoinRandomRoom();
+                PhotonNetwork.JoinLobby(OpenWorld);
+                Debug.Log("Lobby: " + PhotonNetwork.CurrentLobby);
                 SetStatus("Joining an existing room.");
             }
         }
-
+        public override void OnJoinedLobby()
+        {
+            PhotonNetwork.JoinRandomRoom();
+            Debug.Log("Connected To Lobby Server");
+            if (canconnect)
+            {
+                Connect();
+            }
+        }
         /// <summary>
         /// There are no rooms available. Create a new room.
         /// </summary>
@@ -132,6 +143,7 @@ namespace Opsive.UltimateCharacterController.AddOns.Multiplayer.PhotonPun.Demo
             if (PhotonNetwork.CurrentRoom.PlayerCount == 1) {
                 PhotonNetwork.LoadLevel(m_SceneName);
                 Loading.SetActive(true);
+             //   PlayerPrefs.SetString("scenetoload", "GamePlay");
             }
             SetStatus("Connected to a room. Loading the level.");
         }
