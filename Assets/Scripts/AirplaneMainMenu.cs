@@ -13,6 +13,8 @@ public class AirplaneMainMenu : MonoBehaviourPunCallbacks
     public PayCoin pc;
     bool paid=true;
     public GameObject LessBalance;
+    public CheckNft cn;
+    public GameObject lockImg;
     // Start is called before the first frame update
     void Start()
     {
@@ -76,6 +78,15 @@ public class AirplaneMainMenu : MonoBehaviourPunCallbacks
         
             currentjet +=1;
             Jets[currentjet].SetActive(true);
+            if (cn.jetNFT[currentjet]>=1)
+            {
+                lockImg.SetActive(false);     
+            }
+            else
+            {
+                lockImg.SetActive(true);
+            }
+            
         }
     }
     public void Previous()
@@ -89,11 +100,23 @@ public class AirplaneMainMenu : MonoBehaviourPunCallbacks
 
             currentjet -= 1;
             Jets[currentjet].SetActive(true);
+            if (cn.jetNFT[currentjet] >= 1)
+            {
+                lockImg.SetActive(false);      
+            }
+            else
+            {
+                lockImg.SetActive(true);
+            }
         }
     }
     public void SelectJet()
     {
-        PlayerPrefs.SetString("PlayerJet", Jets[currentjet].name);
+        if (cn.jetNFT[currentjet] >= 1)
+        {
+            PlayerPrefs.SetString("PlayerJet", Jets[currentjet].name);
+        }
+        
     }
     public void Leave()
     {

@@ -9,7 +9,7 @@ public class RaceManager : MonoBehaviourPunCallbacks
 {
     public GameObject[] Checkpoints;
     public int Laps;
-    public TMP_Text FinishLineText;
+    public TMP_Text FinishLineText, positiontxt;
     public int currentLap;
     public GameObject FinishPanel;
     public GameObject[] JetPrefabs;
@@ -24,6 +24,8 @@ public class RaceManager : MonoBehaviourPunCallbacks
     bool wait;
     PhotonView photonView;
     public RewardCoin rc;
+    public int position;
+   
     void Start()
     {  
         photonView = PhotonView.Get(this);
@@ -36,8 +38,8 @@ public class RaceManager : MonoBehaviourPunCallbacks
        
         if (PhotonNetwork.CurrentRoom.PlayerCount < MaxPlayers)
         {
-            //WaitingForPlayers.SetActive(true);
-           // wait = true;
+               
+            wait = true;
         }
         
     }
@@ -51,6 +53,13 @@ public class RaceManager : MonoBehaviourPunCallbacks
         if (wait)
         {
             Player.GetComponent<AeroplaneUserControl2Axis>().enabled = false;
+            WaitingForPlayers.SetActive(true);
+        }
+        if (PhotonNetwork.CurrentRoom.PlayerCount == MaxPlayers && wait)
+        {
+            wait = false;
+            WaitingForPlayers.SetActive(false);
+            Player.GetComponent<AeroplaneUserControl2Axis>().enabled = true;
         }
         LapsTest.text = "LAP: " + currentLap + "/" + (Laps - 1);
         if (Checkpoints[Checkpoints.Length-1].GetComponent<Checkpoint>().passed)
@@ -64,8 +73,19 @@ public class RaceManager : MonoBehaviourPunCallbacks
             else
             {
                 FinishPanel.SetActive(true);
+                if (photonView.IsMine)
+                {
+                    photonView.RPC("IncreasePos", RpcTarget.AllBufferedViaServer);
+                }
+                positiontxt.text = "#"+position.ToString();
+                if (position == 1)
+                {
+                    rc.amount = 30;
+                    rc.CallAddCoin();
+                }
                 Time.timeScale = 0;
-              //  Player.GetComponent<AeroplaneUserControl2Axis>().enabled = false;
+                //  Player.GetComponent<AeroplaneUserControl2Axis>().enabled = false;
+                
             }
         }
         if (currentLap == Laps - 1)
@@ -92,5 +112,10 @@ public class RaceManager : MonoBehaviourPunCallbacks
     public override void OnLeftRoom()
     {
         SceneManager.LoadSceneAsync("Airportmenu");
+    }
+    [PunRPC]
+    public void IncreasePos()
+    {
+        position += 1;
     }
 }

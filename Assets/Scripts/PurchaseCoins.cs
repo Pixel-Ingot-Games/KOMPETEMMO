@@ -8,7 +8,6 @@ using System.Numerics;
 using System.Data;
 using System.Security.Cryptography;
 using System.Text;
-using static UnityEditor.Progress;
 using Thirdweb;
 using Nethereum.ABI.FunctionEncoding.Attributes;
 public class PurchaseCoins : MonoBehaviour

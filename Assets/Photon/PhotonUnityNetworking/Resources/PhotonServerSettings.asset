@@ -84,6 +84,7 @@ MonoBehaviour:
   - UpdateAttributeRPC
   - RPCOnFinishRace
   - UpdateTotalScore
+  - IncreasePos
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

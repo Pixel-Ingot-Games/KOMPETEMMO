@@ -33,7 +33,8 @@ public class SelectCarMenuUI :WindowWithShopLogic
 	Coroutine MovePanelsCoroutine;
 	bool SubmitIsPressed = true;
 	bool HorizontalIsPressed = true;
-
+	public CheckNft cn;
+	public GameObject lockImg;
 	List<CarPreset> Cars { get { return WorldLoading.IsMultiplayer? B.MultiplayerSettings.AvailableCarsForMultiplayer: WorldLoading.AvailableCars; } }
 	public Action<CarPreset> OnSelectCarAction { get; set; }
 
@@ -151,12 +152,34 @@ public class SelectCarMenuUI :WindowWithShopLogic
 	{
 		CurrentCarIndex = MathExtentions.LoopClamp (CurrentCarIndex + 1, 0, (Cars.Count));
 		SelectCar (Cars[CurrentCarIndex]);
+        if (cn.carNFT[CurrentCarIndex]>=1)
+        {
+			lockImg.SetActive(false);
+			SelectButton.interactable = true;
+
+		}
+        else
+        {
+			lockImg.SetActive(true);
+			SelectButton.interactable = false;
+		}
 	}
 
 	void PrevCar ()
 	{
 		CurrentCarIndex = MathExtentions.LoopClamp (CurrentCarIndex - 1, 0, (Cars.Count));
 		SelectCar (Cars[CurrentCarIndex]);
+		if (cn.carNFT[CurrentCarIndex] >= 1)
+		{
+			lockImg.SetActive(false);
+			SelectButton.interactable = true;
+		}
+
+		else
+		{
+			lockImg.SetActive(true);
+			SelectButton.interactable = false;
+		}
 	}
 
 	public override void Open ()
